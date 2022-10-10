@@ -1,0 +1,25 @@
+This small notes is designed to help any beginner in linux who happened to mistakenly uninstall python3 in his/her Ubuntu 22.04LTS
+
+Here are the following output criteria you will see on your screen once you have performed this mistake:
+
+# Your dashbaord will be lost 
+# Your desktop will be uninstall and become blank
+# The top bar of your screen which display settingd and time will be gone
+# Probably, you may be able to see your wallpaper
+Don't panic!! just know that half of Ubuntu is built upon python package.
+Look for safe means on how to uninstall unwanted dependecies on your Ubuntu.
+
+Here are the recoverying steps you need to take: 
+#1. Type Ctrl + Alt + F5 to get into the shell 
+#2. Restore the dpkg by typing the following command: 
+	sudo dpkg ---configure -a
+Because the abrupt uninstallation of the python 3 interrupted the dkpg package 
+
+#3. Re-install your python3 by typing : sudo apt-get install python3-all 
+#4. Re-install your gnome-terminal : sudo apt-get install gnome-terminal
+#5. Re-install your ubuntu desktop : sudo apt-get install ubuntu-desktop 
+
+Now wait for your computer to restore itself!!
+In case, your issue does not meet any of the above criteria, sorry that this note did note help you but try to find the appropriate solution
+somewhere else. 
+		Thank you .     
